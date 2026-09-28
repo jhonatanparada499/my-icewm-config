@@ -48,3 +48,10 @@ key "Shift+Print" gnome-screenshot --area
 
 # Look screen
 key "Super+l" i3lock
+
+# Calendar
+key "Super+c" gsimplecal
+
+# Title Windows
+key "Super+Left" icesh -f sizeto 50% 100% top left
+key "Super+Right" icesh -f sizeto 50% 100% top right
