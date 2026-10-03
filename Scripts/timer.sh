@@ -7,7 +7,10 @@ for i in $(seq $1 -1 1); do
   sleep 60
 done
 
-notify-send -u critical -t 0 "Timer's Up" "Take a break at $(date +%r)."
+notify-send -u critical \
+  -t 0 \
+  "Timer's Up" \
+  "Take a break. at: $(date +%r)"
 paplay /usr/share/sounds/LinuxMint/stereo/dialog-information.ogg
 
 echo "Time's up"
